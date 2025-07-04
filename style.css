@@ -15,6 +15,7 @@ body {
     width: 100%;
     text-align: left;
     background-color: rgba(128, 128, 128, 0.5); /* Grey background with 50% transparency */
+    cursor: move;
 }
 
 .tab {
@@ -24,7 +25,6 @@ body {
     text-align: center;
     border-radius: 5px;
     position: absolute;
-    cursor: move;
     user-select: none;
     padding: 0%;
 }
@@ -97,12 +97,12 @@ footer {
     margin-bottom: 0.5vh;
     border-style:groove;
     background-color: #3a015c;
-    width: 100vw;
-    padding: 2px;
+    width: 98vw;
     height: auto;
     position: fixed;
     bottom: 0;
-    left: 0vh;
+    left: 1vw;
+    right: 1vw;
 }
 
 .icon {
@@ -114,13 +114,20 @@ footer {
 }
 
 .icon img {
-    width: 2vww;
-    height: 5vw;
-    padding: 4px;
+    width: 50px;
+    height: 60px;
+    padding: 5px;
 }
 
 .icon img:hover {
     animation: shake 1s infinite;
+}
+
+#mail {
+    width: 50px;
+    height: 80px;
+    padding: 0px;
+    object-fit: cover;
 }
 
 @keyframes shake {
