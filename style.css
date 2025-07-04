@@ -1,22 +1,48 @@
-/* Colour palette used: https://coolors.co/palette/3a015c-32004f-220135-190028-11001c*/
 
-/*TODO: tux poking around side of main content div
-TODO: animate tux to peer around and then go back*/
 
 body {
     text-align: center;
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: linear-gradient(to bottom right, #4E31AA, #BBDED6);
     background-size: cover;
     background-repeat: no-repeat;
-    
+    overflow: hidden;
+}
 
+.tab .nav {
+    width: 100%;
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey background with 50% transparency */
+}
+
+.tab {
+    width: 30vw;
+    height: 50vhpx; 
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    cursor: move;
+    user-select: none;
+    padding: 0%;
+}
+
+.tab-content {
+    max-height: 120px; 
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #0056b3; 
+    border-radius: 5px;
+}
+
+a {
+    color: white;
 }
 
 p {
-    font-family: "Oswald", sans-serif;
+    font-family: "Share Tech", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -24,24 +50,23 @@ p {
 header {
     height: auto;
     border-color: orange;
-    margin-top: 0.5vh;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #32004f;
     width: 95vw;
     border-radius: 10px;
     border-style:groove;
-    font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
+    font-family: "Share Tech", sans-serif;
+    color: white;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "EDPT" 100, "EHLT" 12;
-
+    top: 10vh;
+    left: 10vh;
 }
 
 h3 {
     font-size: 25px;
-    font-family: "Honk", system-ui;
+      font-family: "Share Tech", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -63,28 +88,39 @@ main {
     color:azure;
     border-color: orange;
     border-radius: 10px;
-    position: relative;
-    z-index: 2;
+    top: 20vh;
+    left: 20vh;
 }
 
 footer {
     border-color: orange;
-    margin-top: 0.5vh;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 0.5vh;
     border-style:groove;
     background-color: #3a015c;
-    width: 90vw;
-    border-radius: 10px;
-    padding: 2vh;
+    width: 100vw;
+    padding: 2px;
     height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0vh;
 }
 
-.links {
-    animation-name: shake;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+.icon {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon img {
+    width: 2vww;
+    height: 5vw;
+    padding: 4px;
+}
+
+.icon img:hover {
+    animation: shake 1s infinite;
 }
 
 @keyframes shake {
