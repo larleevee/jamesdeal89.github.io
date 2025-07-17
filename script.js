@@ -1,13 +1,6 @@
 
-const hirebut = document.getElementById("hirebut");
 
 const tabs = document.querySelectorAll('.tab');
-
-document.addEventListener("mousemove", function(event) {
-    hirebut.style.left = event.pageX - hirebut.offsetWidth/2 + "px";
-    hirebut.style.top = event.pageY - hirebut.offsetHeight/2 + "px";
-});
-
 
 tabs.forEach(tab => {
     tab.addEventListener('mousedown', (e) => {
@@ -35,3 +28,15 @@ tabs.forEach(tab => {
         return false;
     };
 });
+
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+function isMobileSize() {
+    return window.innerWidth <= 600;
+}
+
+if (isMobile() || isMobileSize()) {
+    alert("My website is designed to mimick a retro computer desktop. Viewing on a mobile device (or small window) is not recomended (but you can try anyways if you like).");
+}

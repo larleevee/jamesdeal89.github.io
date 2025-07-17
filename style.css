@@ -45,6 +45,7 @@ p {
     font-family: "Share Tech", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding: 1%;
 }
 
 header {
@@ -60,8 +61,8 @@ header {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "EDPT" 100, "EHLT" 12;
-    top: 10vh;
-    left: 10vh;
+    top: 15vh;
+    left: 10vw;
 }
 
 h3 {
@@ -89,7 +90,7 @@ main {
     border-color: orange;
     border-radius: 10px;
     top: 20vh;
-    left: 20vh;
+    left: 50vw;
 }
 
 footer {
