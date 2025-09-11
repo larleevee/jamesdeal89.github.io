@@ -290,7 +290,7 @@ if (mailIcon) {
             toLabel.style.fontFamily = '"Share Tech", sans-serif';
             const toInput = document.createElement('input');
             toInput.type = 'email';
-            toInput.value = 'j891319@protonmail.com';
+            toInput.value = 'james1deal@pm.me';
             toInput.readOnly = true;
             toInput.style.background = '#3a015c';
             toInput.style.color = 'yellow';
@@ -399,11 +399,13 @@ if (!startMenu) {
 startMenu.innerHTML = `
     <div class="menu-item" data-window="header" style="padding:8px 16px; cursor:pointer; border-bottom:1px solid orange;">About / Projects</div>
     <div class="menu-item" data-window="maintab" style="padding:8px 16px; cursor:pointer; border-bottom:1px solid orange;">Who Am I / Hobbies</div>
+    <div class="menu-item" data-window="newtab" style="padding:8px 16px; cursor:pointer; border-bottom:1px solid orange;">My Blog</div>
     <div class="menu-item" id="shutdownBtn" style="padding:8px 16px; cursor:pointer;">Shutdown</div>
 `;
 const windows = {
     header: document.querySelector('header.tab'),
-    maintab: document.getElementById('maintab')
+    maintab: document.getElementById('maintab'),
+    newtab: document.getElementById('newtab')
 };
 menuBtn.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -423,11 +425,11 @@ startMenu.querySelectorAll('.menu-item[data-window]').forEach(item => {
             const footerHeight = footer ? footer.offsetHeight : 0;
             win.style.display = '';
             win.style.zIndex = '15';
-            win.style.left = '5vw';
+            win.style.left = '10vw';
             win.style.top = '5vh';
-            win.style.width = '90vw';
-            win.style.height = `calc(100vh - ${footerHeight + 30}px)`;
-            win.style.maxHeight = `calc(100vh - ${footerHeight + 30}px)`;
+            win.style.width = '70vw';
+            win.style.height = `calc(100vh - ${footerHeight + 90}px)`;
+            win.style.maxHeight = `calc(100vh - ${footerHeight + 90}px)`;
         }
         startMenu.style.display = 'none';
     });

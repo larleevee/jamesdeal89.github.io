@@ -59,8 +59,8 @@ header {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "EDPT" 100, "EHLT" 12;
-    top: 15vh;
-    left: 10vw;
+    top: 8vh;
+    left: 7vw;
 }
 
 h3 {
@@ -88,7 +88,24 @@ main {
     border-color: orange;
     border-radius: 10px;
     top: 20vh;
-    left: 50vw;
+    left: 38vw;
+}
+
+section {
+    margin-top: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #220135;
+    background-image: linear-gradient(to bottom, #220135, #3a015c);
+    border-style:groove;
+    padding: 1vh;
+    width: 80vw;
+    height: auto;
+    color:azure;
+    border-color: orange;
+    border-radius: 10px;
+    top: 10vh;
+    left: 65vw;
 }
 
 footer {
