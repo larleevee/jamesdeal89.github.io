@@ -1,5 +1,6 @@
 // Handles popup messages
 window.showPopup = function(message) {
+
     const popup = document.createElement('div');
     popup.style.position = 'fixed';
     popup.style.left = '50%';
@@ -21,8 +22,10 @@ window.showPopup = function(message) {
     popup.appendChild(document.createElement('br'));
     popup.appendChild(closeBtn);
     document.body.appendChild(popup);
+
 };
 window.isColliding = function(obj1, obj2) {
+
     const rect1 = obj1.getBoundingClientRect();
     const rect2 = obj2.getBoundingClientRect();
     return !(
@@ -31,4 +34,5 @@ window.isColliding = function(obj1, obj2) {
         rect1.left > rect2.right ||
         rect1.right < rect2.left
     );
+
 };

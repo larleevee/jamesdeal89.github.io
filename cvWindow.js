@@ -1,3 +1,5 @@
+// Handles CV icon click to open & draggable window
+
 (function() {
     //find CV icon (with label)
     const cvIcon = Array.from(document.querySelectorAll('.icon-item'))
@@ -9,7 +11,7 @@
     //only allow one CV window open at a time
     let cvWindow = null;
 
-    //helper function ti make default button w/ click handler
+    //helper function to make default button w/ click handler
     function createButton(text, onClick) {
         const btn = document.createElement('button');
         btn.textContent = text;
