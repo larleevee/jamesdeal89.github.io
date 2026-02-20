@@ -7,16 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Honk&family=Oswald:wght@200..700&family=Share+Tech&display=swap" rel="stylesheet">
     <script src="popup.js" defer></script>
     <script src="dragTabs.js" defer></script>
     <script src="dragIcons.js" defer></script>
@@ -29,18 +20,18 @@
 <body>
     <div class="icon">
         <div class="icon-item">
-            <img src="assets/trash.png"/>
+            <img src="assets/trash.png" alt="Trash" />
             <span class="icon-label">Trash</span>
         </div>
         <div class="icon-item">
             <a href="assets/JamesDealResume.pdf" target="_blank">
-            <img src="assets/document.png"/>
+                <img src="assets/document.png" alt="CV" />
             </a>
             <span class="icon-label">CV.pdf</span>
         </div>
         <div class="icon-item">
             <a href="mailto:james1deal@pm.me">
-                <img id="mail" src="assets/mail.png"/>
+                <img id="mail" src="assets/mail.png" alt="Mail" />
             </a>
             <span class="icon-label">Mail</span>
         </div>
@@ -48,72 +39,69 @@
     <header class="tab">
         <div class="nav"><button>x</button><button>+</button></div>
         <div class="tabcontent">
-        <h1> James Deal </h1>
-        <h2> Computer Science Undergraduate Student at the University of Nottingham </h2>
-        <hr/>
-        <h3> Projects </h3>
-        <h4> UniCare </h4>
-        <p>
-            2nd year Group Project. Mobile application, with a Flutter front-end, which interfaces with a Rasa rule-based chat-bot back-end -- 
-            this is hosted on a Google Cloud VPS. The bot provides web-scraped resources which relate to specific emotions or issues the user mentions in chats. 
-            It has crisis-detection as well as helping explain and integrate with other app features. The app is also gamified with breathing exercises and a puzzle game, 
-            plus a journaling area
-        </p>
-        <h4> AR Magazines </h4>
-        <p>
-            An application written in Python which allows users to project video on magazine covers. This was for my client, Kellett School's Media Studies department, 
-            to enhance student's choices in presentation of their coursework magazines. The program allows for 3 detection methods: Aruco markers, key-point detection, 
-            and template matching. Furthermore it allows for text to be transplanted onto the projected video via Optical Character Recognition.
-        </p>
-        <h4> This website! </h4>
-        <p> ...and, of course, this personal website! </p>
-        <p>More projects and code can be found on my <a href="https://github.com/jamesdeal89">GitHub</a></p>
+            <h1>James Deal</h1>
+            <h2>Computer Science Undergraduate Student at the University of Nottingham</h2>
+            <hr />
+            <h3>Projects</h3>
+            <h4>UniCare</h4>
+            <p>
+                2nd year Group Project. Mobile application, with a Flutter front-end, which interfaces with a Rasa rule-based chat-bot back-end --
+                this is hosted on a Google Cloud VPS. The bot provides web-scraped resources which relate to specific emotions or issues the user mentions in chats.
+                It has crisis-detection as well as helping explain and integrate with other app features. The app is also gamified with breathing exercises and a puzzle game,
+                plus a journaling area.
+            </p>
+            <h4>AR Magazines</h4>
+            <p>
+                An application written in Python which allows users to project video on magazine covers. This was for my client, Kellett School's Media Studies department,
+                to enhance student's choices in presentation of their coursework magazines. The program allows for 3 detection methods: Aruco markers, key-point detection,
+                and template matching. Furthermore it allows for text to be transplanted onto the projected video via Optical Character Recognition.
+            </p>
+            <h4>This website!</h4>
+            <p>...and, of course, this personal website!</p>
+            <p>More projects and code can be found on my <a href="https://github.com/jamesdeal89">GitHub</a></p>
         </div>
     </header>
-    <div>
-    </div>
+    <div></div>
     <div id="hide">
-    <img hidden id="tux" src="assets/tux.png"/>
-    <main class="tab" id="maintab">
-        <div class="nav"><button>x</button><button>+</button></div>
-        <div class="tabcontent">
-        <h3>Who Am I?</h3>
-        <p>My names is James (or Jamie) Deal. I'm currently a student at the University of Nottingham in the final year of my Computer Science degree. </p>
-        <p>I'm a fan of the retro tech asthethic and the web 1.0 era -- so I made this website to mimick an early 2000's computer desktop. You can try dragging around these windows and playing with the icons if you like! Some of them do things!</p>
-        <h3>Hobbies</h3>
-        <p>I'm a member of the Triathlon society and mainly enjoy running and cycling (swimming not so much.) </p>
-        <p>I also enjoy reading -- especially Cixin Liu's Remeberance of Earth's past books which approach Sci-Fi in a way which makes it's technology feel possible with enough time and the same circumstances. It also helps that the author is a computer engineer so his explanations usually link to computer science. </p>
-        </div>
-    </main>
-    <section class="tab" id="newtab">
-        <div class="nav"><button>x</button><button>+</button></div>
-        <div class="tabcontent">
-            <h3>Blog - Interesting things from around the internet</h3>
-            <hr/>
-            <p>Maybe this one is a bit hypocritical on this site, but <a href="https://lyra.horse/blog/2025/08/you-dont-need-js/" target="_blank">this blogpost</a> 
-                shows how JavaScript isn't the only way to enable interactive features on modern websites -- sometimes CSS is all you need.</p>
-            <hr/>
-            <p><a href="https://youtu.be/9Ej9JUnFCO0?si=AZPDLYkEXxC0Jn3U" target="_blank">This YouTube video</a> explores the (surprisingly advanced) S-learner model which the New York Times uses to determine when to pay-wall new readers (not all users get the same number of free articles!) to maximise revenue.</p>
-            <hr/>
-            <p>Fascinating blogpost on <a href="https://aresluna.org/the-day-return-became-enter/" target="_blank">how 'Return' became 'Enter'</a> -- it involves typewriters and some interesting history.</p>
-            <hr/>
-            <p>Synthesizing sound from video <em><i>without</i></em> using AI! Cutting edge <a href="https://graphics.stanford.edu/papers/waveblender/" target="_blank">paper from Stanford</a> where they explore using fluid air simulations based on differences between frames in the video input. Here's their, very convincing, <a href="https://youtu.be/wFxERIZE5WQ"target="_blank">demo video.</a></p>
-        </div>
-    </section>
+        <img hidden id="tux" src="assets/tux.png" alt="Tux" />
+        <main class="tab" id="maintab">
+            <div class="nav"><button>x</button><button>+</button></div>
+            <div class="tabcontent">
+                <h3>Who Am I?</h3>
+                <p>My name is James (or Jamie) Deal. I'm currently a student at the University of Nottingham in the final year of my Computer Science degree.</p>
+                <p>I'm a fan of the retro tech aesthetic and the web 1.0 era -- so I made this website to mimic an early 2000's computer desktop. You can try dragging around these windows and playing with the icons if you like! Some of them do things!</p>
+                <h3>Hobbies</h3>
+                <p>I'm a member of the Triathlon society and mainly enjoy running and cycling (swimming not so much).</p>
+                <p>I also enjoy reading -- especially Cixin Liu's Remembrance of Earth's Past books which approach Sci-Fi in a way which makes its technology feel possible with enough time and the same circumstances. It also helps that the author is a computer engineer so his explanations usually link to computer science.</p>
+            </div>
+        </main>
+        <section class="tab" id="newtab">
+            <div class="nav"><button>x</button><button>+</button></div>
+            <div class="tabcontent">
+                <h3>Blog - Interesting things from around the internet</h3>
+                <hr />
+                <p>Maybe this one is a bit hypocritical on this site, but <a href="https://lyra.horse/blog/2025/08/you-dont-need-js/" target="_blank">this blogpost</a>
+                    shows how JavaScript isn't the only way to enable interactive features on modern websites -- sometimes CSS is all you need.</p>
+                <hr />
+                <p><a href="https://youtu.be/9Ej9JUnFCO0?si=AZPDLYkEXxC0Jn3U" target="_blank">This YouTube video</a> explores the (surprisingly advanced) S-learner model which the New York Times uses to determine when to pay-wall new readers (not all users get the same number of free articles!) to maximise revenue.</p>
+                <hr />
+                <p>Fascinating blogpost on <a href="https://aresluna.org/the-day-return-became-enter/" target="_blank">how 'Return' became 'Enter'</a> -- it involves typewriters and some interesting history.</p>
+                <hr />
+                <p>Synthesizing sound from video <em><i>without</i></em> using AI! Cutting edge <a href="https://graphics.stanford.edu/papers/waveblender/" target="_blank">paper from Stanford</a> where they explore using fluid air simulations based on differences between frames in the video input. Here's their, very convincing, <a href="https://youtu.be/wFxERIZE5WQ" target="_blank">demo video.</a></p>
+            </div>
+        </section>
+    </div>
     <footer class="bar">
         <button>Menu</button>
-        <a href="https://www.nottingham.ac.uk/computerscience/" target="_blank"><img class="links" src="assets/notts.png" alt="notts"></a>
-        <a href="https://www.linkedin.com/in/james-deal-b56219220/" target="_blank"><img class="links" src="assets/linkedin.png" alt="notts"></a>
-        <img src="assets/blog.gif" alt="blog"/>
-        <img src="assets/hk.gif" alt="HK"/>
-        <img src="assets/uk.gif" alt="UK"/>
-        <img src="assets/coffee.gif" alt="coffee"/>
-        <img src="assets/linux.png" alt="linux"/>
-        <a href="https://www.mozilla.org/en-US/firefox/" target="_blank"><img class="links" src="assets/firefox.gif" alt="firefox"></a>
+        <a href="https://www.nottingham.ac.uk/computerscience/" target="_blank"><img class="links" src="assets/notts.png" alt="notts" /></a>
+        <a href="https://www.linkedin.com/in/james-deal-b56219220/" target="_blank"><img class="links" src="assets/linkedin.png" alt="linkedin" /></a>
+        <img src="assets/blog.gif" alt="blog" />
+        <img src="assets/hk.gif" alt="HK" />
+        <img src="assets/uk.gif" alt="UK" />
+        <img src="assets/coffee.gif" alt="coffee" />
+        <img src="assets/linux.png" alt="linux" />
+        <a href="https://www.mozilla.org/en-US/firefox/" target="_blank"><img class="links" src="assets/firefox.gif" alt="firefox" /></a>
         <div id="timebox"><p id="time"></p></div>
     </footer>
-
-    
 </body>
-
 </html>
